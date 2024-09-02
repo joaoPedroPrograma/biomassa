@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biomassa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            font-family: Montserrat, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: darkcyan;
+            color: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+        }
+        #center {
+            text-align: center;
+        }
+        img.logo {
+            max-width: 10%;
+            max-height: 10%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .accordion {
+            cursor: pointer;
+            padding: 15px;
+            font-size: 1.2em;
+            border: none;
+            background-color: darkcyan;
+            color: white;
+            text-align: left;
+            outline: none;
+            transition: background-color 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .accordion:hover {
+            background-color: teal;
+        }
+        .accordion::before {
+            content: "\2630"; /* Unicode for hamburger icon */
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        .accordion::after {
+            content: "\25BC"; /* Unicode for down arrow */
+            font-size: 1em;
+            transition: transform 0.3s ease;
+        }
+        .accordion.active::after {
+            transform: rotate(180deg); /* Rotates the arrow when active */
+        }
+        .panel {
+            padding: 15px;
+            display: none;
+            background-color: #ffffff;
+            overflow: hidden;
+            margin-top: 5px;
+            border-radius: 5px;
+            color: black;
+        }
+        .panel img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .panel h3 {
+            color: black;
+            font-size: 1em;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+        
+        /* Media query for devices with a width of 600px or less */
+        @media (max-width: 600px) {
+            img.logo {
+                max-width: 40%;
+                max-height: 40%;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            .accordion {
+                font-size: 1em;
+            }
+            .panel img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/biomassalogo.png" alt="Biomassa Logo" class="logo">
+        <h1 id="center">Biomassa</h1>
+        <p>Alunos: João Pedro; João Pedro; Edvaldo; Matheus Vidal.</p>
+        
+        <button class="accordion">O que é a biomassa como fonte de energia?</button>
+        <div class="panel">
+            <img src="images/Renewable_Energy_101_Biomass_Electricity.gif" alt="Biomassa como fonte de energia">
+            <h3>Biomassa é toda matéria orgânica, de origem vegetal ou animal, utilizada na produção de energia.</h3>
+            <h3>Ela é obtida através da decomposição de uma variedade de recursos renováveis, como plantas, madeira, resíduos agrícolas, restos de alimentos, excrementos e até do lixo.</h3>
+            <img src="images/2110_089_AR_EN.gif">
+        </div>
+
+        <button class="accordion">Fontes de biomassa</button>
+        <div class="panel">
+            <div class="tenor-gif-embed" data-postid="13815089" data-share-method="host" data-aspect-ratio="1.16" data-width="100%"><a href="https://tenor.com/view/minecraft-punch-minecraft-tree-gif-13815089">Minecraft Punch Minecraft GIF</a>from <a href="https://tenor.com/search/minecraft+punch-gifs">Minecraft Punch GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            <h3>Vegetais não lenhosos, lenhosos e resíduos orgânicos</h3>
+        </div>
+
+        <button class="accordion">Suas principais aplicações</button>
+        <div class="panel">
+            <h3>Produção de Energia Elétrica: A biomassa pode ser queimada em caldeiras para produzir vapor, que aciona turbinas geradoras de eletricidade. Este método é amplamente utilizado em países como Brasil, China e Índia.</h3>
+            <img src = "images/energia-da-biomassa-como-funciona.jpg">
+            <h3>Produção de Biocombustíveis: A biomassa pode ser convertida em biocombustíveis líquidos, como etanol e biodiesel, através de processos de fermentação. Esses combustíveis são usados em veículos automotivos e ajudam a reduzir a dependência de combustíveis fósseis.</h3>
+            <h3>Aquecimento e Cozinha: Em muitas áreas rurais, a biomassa é utilizada diretamente como lenha ou em forma de pellets para aquecimento e cocção de alimentos.</h3>
+            <h3>Indústria Química: A biomassa pode ser transformada em produtos químicos, como plásticos biodegradáveis, solventes e lubrificantes, substituindo derivados do petróleo.</h3>
+        </div>
+
+        <button class="accordion">Processos</button>
+        <div class="panel">
+            <img src="images/info.PNG" alt="Processos de Biomassa">
+        </div>
+
+        <button class="accordion">Vantagens e desvantagens da biomassa</button>
+        <div class="panel">
+            <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/JrXas5ecb4FkwbFpIE" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/socialbakers-JrXas5ecb4FkwbFpIE">via GIPHY</a></p>
+            <h3>Vantagens da Geração de Energia por Biomassa:</h3>
+            <h3>Fonte Renovável: Utiliza materiais orgânicos que podem ser reabastecidos.</h3>
+            <h3>Redução de Resíduos: Diminui o volume de lixo e necessidade de aterros.</h3>
+            <h3>Carbono Neutro: O CO2 liberado é compensado pelo crescimento das plantas.</h3>
+            <h3>Diversificação Energética: Reduz dependência de combustíveis fósseis.</h3>
+            <h3>Benefícios Socioeconômicos: Gera empregos em áreas rurais.</h3>
+            <h3>Desvantagens:</h3>
+            <h3>Emissões de Poluentes: Pode liberar gases nocivos e partículas.</h3>
+            <h3>Uso de Terras: Compete com a agricultura e pode afetar a segurança alimentar.</h3>
+            <h3>Baixa Eficiência Energética: Conversão menos eficiente comparada a outras fontes.</h3>
+            <h3>Impacto Ambiental: Pode causar desmatamento e perda de biodiversidade.</h3>
+            <h3>Custo Elevado: Coleta e processamento podem encarecer a produção.</h3>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
