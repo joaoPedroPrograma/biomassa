@@ -50,17 +50,17 @@
             background-color: teal;
         }
         .accordion::before {
-            content: "\2630"; /* Unicode for hamburger icon */
+            content: "\2630"; 
             font-size: 1.5em;
             margin-right: 10px;
         }
         .accordion::after {
-            content: "\25BC"; /* Unicode for down arrow */
+            content: "\25BC"; 
             font-size: 1em;
             transition: transform 0.3s ease;
         }
         .accordion.active::after {
-            transform: rotate(180deg); /* Rotates the arrow when active */
+            transform: rotate(180deg); 
         }
         .panel {
             padding: 15px;
@@ -84,7 +84,6 @@
             line-height: 1.5;
         }
         
-        /* Media query for devices with a width of 600px or less */
         @media (max-width: 600px) {
             img.logo {
                 max-width: 40%;
